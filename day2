@@ -1,0 +1,56 @@
+                   **CONTROL STATEMENTS
+                             |
+  -----------------------------------------------------------
+  |                        |                                |
+  conditional            looping                          Jumping
+  |                        |                                |
+  ->if                     ->for                            ->continue
+  ->else                  ->while                           ->break
+  ->else if ladder       ->Do while                         ->return
+  ->nested if
+  ->switch
+*SYNTAX IF
+     if condition{
+    // Block of code
+}
+*SYNTAX ELSE
+  if condition{
+  //Block of Code
+}
+else{
+  //Block of Code
+}
+ *SYNTAX ELSE IF
+   if condition{
+   // Block of Code
+   else if{
+     //Block of Code
+   }
+   else{
+     //Block of Code
+   }
+*SYNTAX NESTED IF
+  if condition{
+       if condition{
+         //Block of code
+       }
+}
+* SYNTAX SWITCH
+  switch(condition){
+  case 1:
+  \\ statement 1;
+  break;
+  case 2:
+  \\ statement 2;
+  break;
+  case n:
+  \\ statement n;
+  break;
+}
+  
+
+
+
+
+
+  
