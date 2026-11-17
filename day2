@@ -13,6 +13,22 @@
      if condition{
     // Block of code
 }
+SAMPLE CODE:
+import java.util.Scanner;
+
+class IfExample {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a Number: ");
+        int num = sc.nextInt();
+
+        if (num >= 30) {
+            System.out.println("condition is true");
+        }
+    }
+}
 *SYNTAX ELSE
   if condition{
   //Block of Code
@@ -21,6 +37,24 @@ else{
   //Block of Code
 }
 SAMPLE CODE:
+import java.util.Scanner;
+
+class IfElseExample {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        if (num % 2 == 0) {
+            System.out.println("Even number");
+        }
+        else {
+            System.out.println("Odd number");
+        }
+    }
+}
 
  *SYNTAX ELSE IF
    if condition{
