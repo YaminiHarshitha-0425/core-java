@@ -20,6 +20,8 @@
 else{
   //Block of Code
 }
+SAMPLE CODE:
+
  *SYNTAX ELSE IF
    if condition{
    // Block of Code
@@ -29,12 +31,66 @@ else{
    else{
      //Block of Code
    }
+SAMPLE CODE:
+import java.util.Scanner;
+
+public class GradingSystem {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter your marks:");
+        int marks = sc.nextInt();
+
+        if (marks >= 90 && marks <= 100) {
+            System.out.println("Grade A");
+        }
+        else if (marks >= 80) {
+            System.out.println("Grade B");
+        }
+        else if (marks >= 70) {
+            System.out.println("Grade C");
+        }
+        else if (marks >= 60) {
+            System.out.println("Grade D");
+        }
+        else if (marks >= 50) {
+            System.out.println("Grade E");
+        }
+        else if (marks >= 0) {
+            System.out.println("Fail");
+        }
+        else {
+            System.out.println("Invalid Marks");
+        }
+
+        sc.close();
+    }
+ 
+    
+}
+
 *SYNTAX NESTED IF
   if condition{
        if condition{
          //Block of code
        }
 }
+SAMPLE CODE:
+import java.util.Scanner;
+public class nested_if {
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int value=sc.nextInt();
+        if(value>=20){
+            if(value>20){
+                System.out.println("Condition is true:");
+            }
+            System.out.println("condition is false:");
+        }
+    }  
+}
+
 * SYNTAX SWITCH
   switch(condition){
   case 1:
@@ -47,7 +103,55 @@ else{
   \\ statement n;
   break;
 }
-  
+sample code:
+import java.util.Scanner;
+ public class switchfile{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("ENter a Number:");
+        int value1= sc.nextInt();
+        switch(value1){
+            case 1:
+                System.out.println("Monday");
+                break;
+                case 2:
+                    System.out.println("Tuesday");
+                    break;
+                    case 3:
+                        System.out.println("wednesday");
+                        break;
+                        case 4:
+                            System.out.println("Thursday");
+                            case 5:
+                                System.out.println("Friday");
+                                break;
+                                case 6:
+                                    System.out.println("Saturday");
+                                    break;
+                                    case 7:
+                                        System.out.println("Sunday");
+                                        break;
+                                        default:
+                                            System.out.println("Invalid Number");
+                                        break;
+
+        }
+    }
+ }
+  * SYNTAX FOR LOOP
+for(initialization,condition,increment(or)decrement){
+//Block of code
+}
+sample code:
+public class for_loop{
+    public static void main(String[]args){
+        int num=30;
+        for(int i=0;i<=num;i++){
+            System.out.println(i);
+        }
+    }
+    
+}
 
 
 
