@@ -9,10 +9,12 @@
   ->else if ladder       ->Do while                         ->return
   ->nested if
   ->switch
+
 *SYNTAX IF
      if condition{
     // Block of code
 }
+
 SAMPLE CODE:
 import java.util.Scanner;
 
@@ -29,6 +31,7 @@ class IfExample {
         }
     }
 }
+
 *SYNTAX ELSE
   if condition{
   //Block of Code
@@ -36,6 +39,7 @@ class IfExample {
 else{
   //Block of Code
 }
+
 SAMPLE CODE:
 import java.util.Scanner;
 
@@ -56,7 +60,8 @@ class IfElseExample {
     }
 }
 
- *SYNTAX ELSE IF
+ 
+*SYNTAX ELSE IF
    if condition{
    // Block of Code
    else if{
@@ -65,6 +70,8 @@ class IfElseExample {
    else{
      //Block of Code
    }
+
+
 SAMPLE CODE:
 import java.util.Scanner;
 
@@ -103,12 +110,15 @@ public class GradingSystem {
     
 }
 
+
 *SYNTAX NESTED IF
   if condition{
        if condition{
          //Block of code
        }
 }
+
+
 SAMPLE CODE:
 import java.util.Scanner;
 public class nested_if {
@@ -125,6 +135,7 @@ public class nested_if {
     }  
 }
 
+
 * SYNTAX SWITCH
   switch(condition){
   case 1:
@@ -137,6 +148,8 @@ public class nested_if {
   \\ statement n;
   break;
 }
+
+
 sample code:
 import java.util.Scanner;
  public class switchfile{
@@ -172,11 +185,13 @@ import java.util.Scanner;
         }
     }
  }
-  * SYNTAX FOR LOOP
+  
+* SYNTAX FOR LOOP
 for(initialization,condition,increment(or)decrement){
 //Block of code
 }
-sample code:
+
+SAMPLE CODE:
 public class for_loop{
     public static void main(String[]args){
         int num=30;
