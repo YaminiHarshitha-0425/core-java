@@ -138,14 +138,30 @@ class Main {
     }
 }
 
-Inspecting
+**INSPECTING**
 ->length()
 ->charAt()
 ->isEmpty()
 ->isBlank()
-Extracted by index
+**EXTRACTED BY INDEX**
 ->subString()
 ->indexof()
-Compare
+**Compare**
 ->equals()
 ->compareTo()
+**FIND**
+->contains()
+->startwith()
+->endwith()
+**TRANSFER**
+->Trim()
+->Strip()
+->concate()
+->repeat()
+**REPLACE**
+->replace()
+->replaceall()
+->replacefirst()
+**SPLIT**
+->split()
+
