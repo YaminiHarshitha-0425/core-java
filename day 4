@@ -191,6 +191,24 @@ public class stringbuffer {
     }
     
 }
+Object Oriented Programming structured Language
+A concentratic class is a regular class used to create objects.
+->Concrete Class
+->Abstract Class
+->Final Class 
+->Static Nested class
+->Inner Class
+->Local class
+->Anonymous class
+->Enum class
+->Interface
+Access modifirer :
+    public,protected,private,default
+funtion types:
+1.with parameters ,with return type
+2.without parameters ,with return type
+3.without parameters ,without return type
+4..with parameters ,without return type
 
 
 
