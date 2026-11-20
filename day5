@@ -193,4 +193,60 @@ public class Main {
         s.motherProperty();
     }
 }
-  
+  5. Hybrid Inheritance
+Definition: When two or more types of inheritance are combined, it is called Hybrid Inheritance.
+//SYNTAX///
+class A {
+}
+
+class B extends A {
+}
+
+interface C {
+    void display();
+}
+
+class D extends B implements C {
+    public void display() {
+        System.out.println("Hybrid inheritance");
+    }
+}
+=====EXAMPLE CODE======
+class College {
+    void collegeName() {
+        System.out.println("ABC College");
+    }
+}
+
+class Student extends College {
+    void studentName() {
+        System.out.println("Student: Ravi");
+    }
+}
+
+interface Sports {
+    void play();
+}
+
+class Result extends Student implements Sports {
+
+    public void play() {
+        System.out.println("Playing cricket");
+    }
+
+    void marks() {
+        System.out.println("Marks: 90");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Result r = new Result();
+
+        r.collegeName();
+        r.studentName();
+        r.play();
+        r.marks();
+    }
+}
