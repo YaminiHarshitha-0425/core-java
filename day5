@@ -1,0 +1,196 @@
+**INHERITANCE**
+  Single Inheritance
+Multilevel Inheritance
+Hierarchical Inheritance
+Multiple Inheritance
+Hybrid Inheritance
+  //SYNTAX//
+  class ParentClass {
+    // Variables and methods
+}
+
+class ChildClass extends ParentClass {
+    // Additional variables and methods
+}
+EXAMPLE CODE
+  class Animal {
+    void eat() {
+        System.out.println("Animal is eating");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog is barking");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Dog d = new Dog();
+
+        d.eat();   // Parent class method
+        d.bark();  // Child class method
+    }
+}
+1. Single Inheritance
+Definition: When one child class inherits properties and methods from only one parent class, it is called Single Inheritance.
+  //SYNTAX//
+  class Parent {
+    // Variables and methods
+}
+
+class Child extends Parent {
+    // Child methods
+}
+=====EXAMPLE CODE====
+  class Father {
+    void property() {
+        System.out.println("Father has a house");
+    }
+}
+
+class Son extends Father {
+    void bike() {
+        System.out.println("Son has a bike");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Son s = new Son();
+
+        s.property();
+        s.bike();
+    }
+}
+2. Multilevel Inheritance
+Definition: When one class inherits another class, and a third class inherits the second class, it is called Multilevel Inheritance.
+  //SYNTAX//
+  class A {
+}
+
+class B extends A {
+}
+
+class C extends B {
+}
+====EXAMPLE CODE====
+  class Grandfather {
+    void house() {
+        System.out.println("Grandfather has a house");
+    }
+}
+
+class Father extends Grandfather {
+    void car() {
+        System.out.println("Father has a car");
+    }
+}
+
+class Son extends Father {
+    void bike() {
+        System.out.println("Son has a bike");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Son s = new Son();
+
+        s.house();
+        s.car();
+        s.bike();
+    }
+}
+3. Hierarchical Inheritance
+Definition: When multiple child classes inherit properties and methods from one common parent class, it is called Hierarchical Inheritance.
+  //SYNTAX//
+  class Parent {
+}
+
+class Child1 extends Parent {
+}
+
+class Child2 extends Parent {
+}
+======EXAMPLE CODE======
+  class College {
+    void collegeName() {
+        System.out.println("ABC Engineering College");
+    }
+}
+
+class Student extends College {
+    void study() {
+        System.out.println("Student is studying");
+    }
+}
+
+class Teacher extends College {
+    void teach() {
+        System.out.println("Teacher is teaching");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Student s = new Student();
+        s.collegeName();
+        s.study();
+
+        Teacher t = new Teacher();
+        t.collegeName();
+        t.teach();
+    }
+}
+4. Multiple Inheritance
+Definition: When one child class inherits properties and methods from more than one parent class, it is called Multiple Inheritance.
+  //SYNTAX//
+  interface A {
+    void methodA();
+}
+
+interface B {
+    void methodB();
+}
+
+class C implements A, B {
+    public void methodA() {
+    }
+
+    public void methodB() {
+    }
+}
+===EXAMPLE CODE====
+  interface Father {
+    void fatherProperty();
+}
+
+interface Mother {
+    void motherProperty();
+}
+
+class Son implements Father, Mother {
+
+    public void fatherProperty() {
+        System.out.println("Father has a car");
+    }
+
+    public void motherProperty() {
+        System.out.println("Mother has a house");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Son s = new Son();
+
+        s.fatherProperty();
+        s.motherProperty();
+    }
+}
+  
